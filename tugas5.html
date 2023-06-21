@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 5 Kevin</title>
+</head>
+<body>
+    <h1>Input dan Cetak Teks</h1>
+    
+    <label for="inputTeks">Masukkan Teks:</label>
+    <input type="text" id="inputTeks">
+    <br>
+    <label for="jumlahPengulangan">Jumlah Pengulangan:</label>
+    <input type="number" id="jumlahPengulangan">
+    
+    <button onclick="cetakTeks()">Cetak</button>
+    
+    <script>
+        function cetakTeks() {
+            var teks = document.getElementById("inputTeks").value;
+            var jumlah = document.getElementById("jumlahPengulangan").value;
+            
+            // Periksa apakah input teks dan jumlah pengulangan valid
+            if (teks !== "" && jumlah > 0) {
+                var output = "";
+                
+                // Lakukan pengulangan sebanyak jumlah yang ditentukan
+                for (var i = 0; i < jumlah; i++) {
+                    output += teks + "<br>";
+                }
+                
+                // Cetak hasil ke dalam elemen dengan id "output"
+                document.getElementById("output").innerHTML = output;
+            }
+        }
+    </script>
+    
+    <div id="output"></div>
+</body>
+</html>

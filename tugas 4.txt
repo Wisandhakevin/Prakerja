@@ -1,0 +1,13 @@
+READ and SAVE "radius"
+COMPUTE "circumference" as 2 multiplied by 3.14 multiplied by "radius"
+COMPUTE "area" as 3.14 multiplied by "radius" multiplied by "radius"
+SHOW "circumference" as the computed circumference of the circle
+SHOW "area" as the computed area of the circle
+
+===================================================
+EXAMPLE :
+READ and SAVE "radius" as 5
+COMPUTE "circumference" as 2 multiplied by 3.14 multiplied by 5
+COMPUTE "area" as 3.14 multiplied by 5 multiplied by 5
+SHOW "circumference" as 31.4 units (computed circumference of the circle)
+SHOW "area" as 78.5 square units (computed area of the circle)

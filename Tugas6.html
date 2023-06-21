@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+</head>
+
+<body>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+            debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+            maiores in?</p>
+    <p class="paragraf3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+                debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+                maiores in?</p>
+    <script>
+   document.addEventListener("DOMContentLoaded", function() {
+  var sentence1 = document.querySelector(".paragraf");
+  var sentence2 = document.querySelector(".paragraf2");
+  var sentence3 = document.querySelector(".paragraf3");
+
+  var colors = ["green", "yellow", "red"];
+  var index1 = 0;
+  var index2 = 0;
+  var index3 = 0;
+
+  setInterval(function() {
+    sentence1.style.color = colors[index1];
+    index1 = (index1 + 1) % colors.length;
+  }, 2000);
+
+  setInterval(function() {
+    sentence2.style.color = colors[index2];
+    index2 = (index2 + 1) % colors.length;
+  }, 2000);
+
+  setInterval(function() {
+    sentence3.style.color = colors[index3];
+    index3 = (index3 + 1) % colors.length;
+  }, 2000);
+}); 
+    </script>
+
+</body>
+
+</html>
